@@ -1,0 +1,71 @@
+    1  cat  <<EOF  >/etc/yum.repos.d/kube.repo
+    2  [kube]
+    3  baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+    4  gpgcheck=0
+    5  EOF
+    6  swapoff  -a
+    7  setenforce  0
+    8  yum  install  docker kubeadm  -y
+    9  cat  <<X  >/etc/docker/daemon.json
+   10  {
+   11    "exec-opts": ["native.cgroupdriver=systemd"]
+   12  }
+   13  X
+   14  sudo systemctl enable --now  docker kubelet
+   15  kubeadm  init --pod-network-cidr=192.168.0.0/16
+   16  mkdir -p $HOME/.kube
+   17  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+   18  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+   19  kubectl get nodes
+   20  kubectl apply -f   https://docs.projectcalico.org/manifests/calico.yaml
+   21  kubectl get nodes
+   22  kubectl get nod
+   23  kubectl get nodes
+   24  exit
+   25  modprobe br_netfilter
+   26  echo '1' > /proc/sys/net/bridge/bridge-nf-call-iptables
+   27  cat  <<EOF  >/etc/yum.repos.d/kube.repo
+   28  [kube]
+   29  baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+   30  gpgcheck=0
+   31  EOF
+   32  yum  install  docker kubeadm  -y
+   33  kubectl
+   34  kubectl nod
+   35  kubectl get pod
+   36  kubectl get node
+   37  kubeadm init
+   38  source <(kubectl1 completion bash)
+   39  source <(kubectl1 completion bash)>
+   40  source <(kubectl completion bash)>
+   41  source <(kubectl completion bash)
+   42  echo source <(kubectl completion bash)
+   43  echo "source <(kubectl completion bash)" >> .bashrc
+   44  logout
+   45  kubectl get 
+   46  kubectl explain <resource>
+   47  exit
+   48  kubectl config set-context --current --namespace=dev
+   49  kubectl run web1 --image=nginx
+   50  kubectl get po
+   51  kubectl get pod -n dev
+   52  exit
+   53  sudo kubectl config set-context --current --namespace=dev
+   54  kubectl run -f my-pod --image=httpd
+   55  kubectl delete web1
+   56  kubectl delete web2
+   57  kubectl delete pod web2
+   58  kubectl delete pod web1
+   59  kubectl get pod
+   60  sudo kubectl config set-context --current --namespace=dev
+   61  kubectl run my-pod --image=httpd
+   62  kubectl get pod
+   63  kubectl get pod -n dev
+   64  kubectl delete pod my-pod 
+   65  kubectl config set-context --current --namespace=dev
+   66  kubectl run my-pod --image=httpd
+   67  kubectl get pod
+   68  kubectl get pod -n dev
+   69  kubectl config set-context --current --namespace=default
+   70  exit
+   71  history > history.txt

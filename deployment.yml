@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+      name: web-app-rs 
+spec:
+     template: # template from pod.yml
+       metadata:
+            name: web2
+            labels:
+              name: xyz
+       spec:
+         containers:
+            - name: web
+              image: nginx
+
+     selector:
+      matchLabels:
+         name: xyz
+     replicas: 3      # number of replicas to create

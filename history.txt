@@ -361,3 +361,38 @@
   361  ls
   362  sudo history > history.txt
   363  history > history.txt
+95  cp deployment.yml daemonset.yml
+   96  sudo cp deployment.yml daemonset.yml
+   97  ls
+   98  sudo su
+   99  sudo su
+  100  ls
+  101  cd legions-kubernetes-2023/
+  102  kubectl get nodes
+  103  kubect describe nodes master
+  104  kubect describe node master
+  105  kubectl describe node master
+  106  cp daemonset.yml daemonsetonmaster.yml 
+  107  sudo cp daemonset.yml daemonsetonmaster.yml 
+  108  sudo nano daemonsetonmaster.yml 
+  109  kubectl apply -f daemonsetonmaster.yml 
+  110  sudo nano daemonsetonmaster.yml 
+  111  kubectl apply -f daemonsetonmaster.yml 
+  112  kubectl get ds
+  113  sudo nano daemonsetonmaster.yml 
+  114  kubectl apply -f daemonset.yml
+  115  kubectl get ds
+  116  sudo nano daemonsetonmaster.yml 
+  117  kubectl apply -f daemonsetonmaster.yml 
+  118  kubectl get ds
+  119  sudo nano daemonsetonmaster.yml 
+  120  kubectl get po
+  121  sudo git status
+  122  history >> history.txt 
+  123  sudo history >> history.txt 
+  124  cat history.txt 
+  125  cd ~
+  126  sudo history >> egions-kubernetes-2023/history.txt
+  127  kubectl get po -o wide
+  128  sudo history >> legions-kubernetes-2023/history.txt
+  129  history

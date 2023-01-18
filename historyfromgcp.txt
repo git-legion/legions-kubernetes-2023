@@ -1,0 +1,305 @@
+    1  swapoff -a
+    2  sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+    3  sudo reboot
+    4  sudo apt-get install -y apt-transport-https ca-certificates curl gnupg lsb-release
+    5  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+    6  sudo -i
+    7  kubectl
+    8  kubectl get nodes
+    9  mkdir .kube
+   10  sudo cp -i /etc/kubernetes/admin.conf .kube/config
+   11  sudo chown $(id -u):$(id -g) .kube/config
+   12  kubectl get nodes
+   13  jhjk
+   14  ls
+   15  sudo -i
+   16  ls
+   17  sudo ls -l
+   18  kubectl get pod
+   19  sudo su
+   20  exit
+   21  sudo -i
+   22  sudo su
+   23  exit
+   24  cd /etc/ssh
+   25  ls
+   26  sudo vi ssh_config
+   27  sudo vi sshd_config
+   28  sudo systemctl restart sshd
+   29  passwd sanjaykumaratal18 
+   30  whoami
+   31  sudo passwd sanjaykumaratal18 
+   32  sudo systemctl restart sshd
+   33  cd /etc/ssh
+   34  ls
+   35  sudo vi sshd_config
+   36  sudo systemctl restart sshd
+   37  sudo vi sshd_config
+   38  sudo systemctl restart sshd
+   39  sudo vi sshd_config
+   40  sudo systemctl restart sshd
+   41  sudo reboot
+   42  sudo su
+   43  reboot
+   44  sudo su
+   45  vi /etc/ssh/sshd_config
+   46  nano /etc/sudoers
+   47  su root
+   48  sudo su
+   49  sudo systemctl restart sshd
+   50  git -v
+   51  git --v
+   52  dufo git -v
+   53  git
+   54  sudo git clone https://github.com/git-legion/legions-kubernetes-2023.git
+   55  sudo su
+   56  su root
+   57  sudo su
+   58  sudo git clone https://github.com/git-legion/legions-kubernetes-2023.git
+   59  ls
+   60  cp -r legions-kubernetes-2023/* kubernetes
+   61  sudo cp  legions-kubernetes-2023/* kubernetes
+   62  mkdir kubernetes
+   63  rmk
+   64  rm kubernetes/
+   65  rmdir kubernetes/
+   66  ls
+   67  cd legions-kubernetes-2023/
+   68  ls
+   69  kubectl get po
+   70  kubectl describe po uv1 
+   71  kubectl describe po uv1 kubectl config view --minify -o jsonpath='{..namespace}'
+   72  kubectl config view | grep namespace
+   73  kubectl config view --minify | grep namespace
+   74  NS=$(kubectl config view --minify --output 'jsonpath={..namespace}')
+   75  NS=$([ ! -z "$NS" ] && echo "$NS" || echo "default")
+   76  NS=$(kubectl config view --minify --output 'jsonpath={..namespace}')
+   77  kubernetes-2023$ kubectl config view | grep namespace
+   78  kubectl describe sa default | grep Namespace
+   79  kubectl describe sa dev | grep Namespace
+   80  kubectl create namespace dev
+   81  kubectl describe sa dev | grep Namespace
+   82  kubectl describe sa default | grep Namespace
+   83  kubectl config view -o jsonpath="{.contexts[?(@.name == '$(kubectl config current-context)')].context.namespace}" 
+   84  kubectl config view --minify --flatten
+   85  cat .kube/config
+   86  cat ../.kube/config
+   87  kubectl config set-context --current --namespace=dev
+   88  cat ../.kube/config
+   89  kubectl run web -- image=httpd
+   90  kubectl run web --image=httpd
+   91  kubectl get pods
+   92  kubectl get pod -n dev
+   93  kubectl config set-context --current --namespace=default
+   94  kubectl get pod 
+   95  cp deployment.yml daemonset.yml
+   96  sudo cp deployment.yml daemonset.yml
+   97  ls
+   98  sudo su
+   99  sudo su
+  100  ls
+  101  cd legions-kubernetes-2023/
+  102  kubectl get nodes
+  103  script kube.txt
+  104  ls
+  105  cd k
+  106  cd legions-kubernetes-2023/
+  107  kubectl get nodes
+  108  kubectl describe nodes master
+  109  kubectl get nodes
+  110  kubect describe nodes master
+  111  kubect describe node master
+  112  kubectl describe node master
+  113  cp daemonset.yml daemonsetonmaster.yml 
+  114  sudo cp daemonset.yml daemonsetonmaster.yml 
+  115  sudo nano daemonsetonmaster.yml 
+  116  kubectl apply -f daemonsetonmaster.yml 
+  117  sudo nano daemonsetonmaster.yml 
+  118  kubectl apply -f daemonsetonmaster.yml 
+  119  kubectl get ds
+  120  sudo nano daemonsetonmaster.yml 
+  121  kubectl apply -f daemonset.yml
+  122  kubectl get ds
+  123  sudo nano daemonsetonmaster.yml 
+  124  kubectl apply -f daemonsetonmaster.yml 
+  125  kubectl get ds
+  126  sudo nano daemonsetonmaster.yml 
+  127  kubectl get po
+  128  sudo git status
+  129  history >> history.txt 
+  130  sudo history >> history.txt 
+  131  cat history.txt 
+  132  cd ~
+  133  sudo history >> egions-kubernetes-2023/history.txt
+  134  kubectl get po -o wide
+  135  sudo history >> legions-kubernetes-2023/history.txt
+  136  history
+  137  cd legions-kubernetes-2023/
+  138  sudo nano history.txt 
+  139  sudo git status
+  140  sudo git add .daemonset.yml.swo daemonset.yml daemonsetonmaster.yml
+  141  sudo git status
+  142  sudo git add history.txt
+  143  sudo git status
+  144  sudo git push -u origin main
+  145  sudo git commit -m "adding daemonset YAML files"
+  146  sudo git push -u origin main
+  147  ls
+  148  cd legions-kubernetes-2023/
+  149  kubectlcreate
+  150  kubectl create quota --help
+  151  kubectl create quota my-quota
+  152  --hard=cpu=1,memory=1G,pods=2,services=3,replicationcontrollers=2,resourcequotas=1,secrets=5,persistentvolumeclaims=10kubectl create quota my-quota
+  153  kubectl create quota my-quota
+  154  kubectl create quota my-quota --hard=cpu=1,memory=1G,pods=2,services=3,replicationcontrollers=2,resourcequotas=1,secrets=5,persistentvolumeclaims=10 --dry-run=client -o yaml > quota.yml
+  155  sudo kubectl create quota my-quota  --hard=cpu=1,memory=1G,pods=2,services=3,replicationcontrollers=2,resourcequotas=1,secrets=5,persistentvolumeclaims=10 --dry-run=client -o yaml > quota.yml
+  156  cd ~
+  157  sudo kubectl create quota my-quota  --hard=cpu=1,memory=1G,pods=2,services=3,replicationcontrollers=2,resourcequotas=1,secrets=5,persistentvolumeclaims=10 --dry-run=client -o yaml > quota.yml
+  158  ls
+  159  cat quota.yml 
+  160  vi quota.yml 
+  161  cp quota.yml legions-kubernetes-2023/
+  162  sudo cp quota.yml legions-kubernetes-2023/
+  163  cd legions-kubernetes-2023/
+  164  ;s
+  165  ls
+  166  sudo vi quota.yml 
+  167  kubectl api-resouces | grep -i quota
+  168  kubectl api-resouces | grep -i resources
+  169  kubectl api-resources | grep -i quota
+  170  sudo vi quota.yml 
+  171  kubectl create quota test --hard=count/deployments.apps=2,count/replicasets.apps=4,count/pods=3,count/secrets=4 --namespace=myspace
+  172  kubectl create quota test --hard=count/deployments.apps=2,count/replicasets.apps=4,count/pods=3,count/secrets=4 -o yaml --dry-run=client 
+  173  kubectl create quota test --hard=count/deployments.apps=2,count/replicasets.apps=4,count/pods=3,count/secrets=4 -o yaml --dry-run=client > quota.yml 
+  174  sudo kubectl create quota test --hard=count/deployments.apps=2,count/replicasets.apps=4,count/pods=3,count/secrets=4 -o yaml --dry-run=client > quota.yml 
+  175  cd ~
+  176  sudo kubectl create quota test --hard=count/deployments.apps=2,count/replicasets.apps=4,count/pods=3,count/secrets=4 -o yaml --dry-run=client > quota.yml 
+  177  ls
+  178  cat quota.yml 
+  179  rm legions-kubernetes-2023/quota.yml 
+  180  sudo rm legions-kubernetes-2023/quota.yml 
+  181  cp quota.yml legions-kubernetes-2023/
+  182  sudo cp quota.yml legions-kubernetes-2023/
+  183  cd legions-kubernetes-2023/
+  184  ls
+  185  cat quota.yml 
+  186  sudo vi quota.yml 
+  187  kubectl get quota
+  188  ls
+  189  kubectl apply -f quota.yml 
+  190  kubectl get quota
+  191  kubectl create -f deployment.yml
+  192  kubectl get deployment.apps
+  193  kubectl get deployment
+  194  kubectl get quota
+  195  kubectl get po
+  196  kubectl get rs
+  197  kubectl get deployment
+  198  cd ~
+  199  history > history.txt
+  200  ls
+  201  cd legions-kubernetes-2023/
+  202  ls
+  203  kubectl get po
+  204  kubectl get rs
+  205  kubectl get po
+  206  kubectl get deployment
+  207  cat quota.yml 
+  208  kubectl get deployment
+  209  kubectl get quota
+  210  kubectl deployments.apps web-app-rs
+  211  kubectl describe deployments.apps web-app-rs
+  212  kubectl deployments.apps web-app-rs
+  213  kubectl get deployments.apps web-app-rs
+  214  cat deployment.yml 
+  215  cat replicaset.yml 
+  216  cat quota.yml 
+  217  kubectl get daemonset
+  218  kubectl delete daemonset.apps ds ds-master
+  219  kubectl get po
+  220  kubwctl deployment.apps web-app-rs
+  221  kubwctl delete deployment.apps web-app-rs
+  222  kubectl delete deployment.apps web-app-rs
+  223  kubectl get deployment.apps web-app-rs
+  224  kubectl get deploymen
+  225  kubectl get deployment
+  226  kubectl create -f deploy.yml
+  227  kubectl create -f deployment.yml
+  228  kubectl get deployment
+  229  kubectl describe deployment web-app-rs
+  230  kuebctl get po
+  231  kubectl get po
+  232  kubectl kubect delete po uv1
+  233  kubectl delete po uv1
+  234  kubectl get po
+  235  kubectl create -f deployment.yml
+  236  kubectl get po
+  237  kubectl get deployment
+  238  kubectl delete deployment web-app-rs
+  239  kubectl get deployment
+  240  kubectl create -f deployment.yml
+  241  kubectl get deployment
+  242  kubectl get quota
+  243  kubectl run s1 --iamge=nginx
+  244  kubectl run s1 --image=nginx
+  245  kubectl get as
+  246  kubectl get nd
+  247  kubectl get ns
+  248  sudo vi quota.yml 
+  249  kubectl apply -f quota.yml 
+  250  kubectl get -n dev
+  251  kubectl get quota -n dev
+  252  cat quota.yml 
+  253  sudo vi quota.yml 
+  254  kubectl apply -f quota.yml 
+  255  kubectl get quota 
+  256  kubectl get quota -n dev
+  257  sudo vi quota.yml 
+  258  kubectl get quota -n dev
+  259  sudo vi quota.yml 
+  260  kubectl apply -f quota.yml 
+  261  kubectl get quota 
+  262  kubectl get quota -n default
+  263  cp pod.yml pod_with_CPU_RAM_limit.yml
+  264  sudo cp pod.yml pod_with_CPU_RAM_limit.yml
+  265  ls 
+  266  sudo vi pod_with_CPU_RAM_limit.yml 
+  267  kubectl apply -f pod_with_CPU_RAM_limit.yml 
+  268  kubectl get pod
+  269  kubectl delete rs web-app-rs
+  270  kubectl delete rs deployment
+  271  kubectl delete get deployment
+  272  kubectl delete get daemonset
+  273  kubectl delete get rs
+  274  kubectl delete get cs
+  275  kubectl delete get pod
+  276  kubectl get rs
+  277  kubectl delete rs web-app-rs
+  278  kubectl get ds
+  279  kubectl get rs
+  280  kubectl delete rs web-app-rs
+  281  kubectl describe web-app-rs
+  282  kubectl describe rs web-app-rs
+  283  kubect delete pod 
+  284  kubectl get pod 
+  285  kubect delete pod web-app-rs-cb4d88bdd-hg8qs
+  286  kubectl delete pod web-app-rs-cb4d88bdd-hg8qs
+  287  kubectl delete pod web-app-rs
+  288  kubectl delete pod web-app-rs-cb4d88bdd-pk6r9 web-app-rs-cb4d88bdd-v84fd 
+  289  kubectl get pod 
+  290  kubectl apply -f pod_with_CPU_RAM_limit.yml 
+  291  sudo vi pod_with_CPU_RAM_limit.yml 
+  292  kubectl get quota
+  293  kubectl get pod 
+  294  kubectl describe pod web2
+  295  sudo cp pod_with_CPU_RAM_limit.yml mysql_pod.yml
+  296  ls
+  297  sudo vi mysql_pod.yml 
+  298  kubectl apply -f mysql_pod.yml 
+  299  sudo vi mysql_pod.yml 
+  300  kubectl apply -f mysql_pod.yml 
+  301  sudo vi mysql_pod.yml 
+  302  kubectl get pod
+  303  kubectl logs pods/database
+  304  cd ~
+  305  history > history.txt 

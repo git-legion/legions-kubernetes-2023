@@ -303,3 +303,162 @@
   303  kubectl logs pods/database
   304  cd ~
   305  history > history.txt 
+387  ls
+  388  kubectl create configmap --help
+  389  kubectl create configmap --from-literal MYSQL_ROOT_PASSWORD=x --dry-run=client -o yaml > configmap.yml
+  390  sudo kubectl create configmap --from-literal MYSQL_ROOT_PASSWORD=x --dry-run=client -o yaml > configmap.yml
+  391  cd ~
+  392  sudo kubectl create configmap --from-literal MYSQL_ROOT_PASSWORD=x --dry-run=client -o yaml > configmap.yml
+  393  sudo kubectl create configmap cm1  --from-literal MYSQL_ROOT_PASSWORD=x --dry-run=client -o yaml > configmap.yml
+  394  ls
+  395  sudo cp configmap.yml legions-kubernetes-2023/
+  396  l
+  397  scd legions-kubernetes-2023/
+  398  ls
+  399  cd legions-kubernetes-2023/
+  400  ls
+  401  sudo vi configmap.yml
+  402  cat dbconfig.yml
+  403  sudo vi dbconfig.yml
+  404  cat configmap.yml
+  405  kubectl create -f configmap.yml
+  406  kubectl get cm
+  407  kubectl describe cm1
+  408  kubectl describe cm cm1
+  409  sudo vi dbconfig.yml
+  410  kubectl get po
+  411  kubectl delete datbase
+  412  kubectl delete po datbase
+  413  kubectl delete pod datbase
+  414  kubectl delete pod database
+  415  kubectl apply -f dbconfig.yml
+  416  kubectl get po
+  417  kubectl exec -it database -- bash
+  418  kubectl delete pod database
+  419  sudo vi dbconfig.yml
+  420  sudo vi configmap.yml
+  421  sudo vi dbconfig.yml
+  422  kubectl apply -f dbconfig.yml
+  423  kubectl get po
+  424  kubectl get po -w
+  425  kubectl describe database
+  426  kubectl describe po database
+  427  kubectllogs pod/database
+  428  kubectl logs pod/database
+  429  cd ~
+  430  sudo kubectl create secret genric secrete1 --from-literal x=sanjay --dry-run=client -o yaml > secret.yml
+  431  sudo kubectl create secret generic secrete1 --from-literal x=sanjay --dry-run=client -o yaml > secret.yml
+  432  ls
+  433  cat secret.yml c
+  434  cat secret.yml
+  435  sudo vi secret.yml
+  436  cat secret.yml
+  437  kubectl apply -f secret.yml
+  438  kubectl get sec
+  439  kubectl get secret
+  440  cp secret.yml legions-kubernetes-2023/
+  441  sudo cp secret.yml legions-kubernetes-2023/
+  442  cd legions-kubernetes-2023/
+  443  ls
+  444  cat secret.yml
+  445  sudo cp dbconfig.yml dbsecret.yml
+  446  ls
+  447  sudo vi dbsecret.yml
+  448  kubectl apply -f dbsecret.yml
+  449  kubectl getpod
+  450  kubectl get pod
+  451  kubectllogs pod/secretdatabase
+  452  kubectl logs pod/secretdatabase
+  453  kubectl get logs pod/secretdatabase
+  454  kubectl logs pod/secretdatabase
+  455  kubectl get pod -w
+  456  kubectl describe pod pod-missing-config
+  457  kubectl describe pod secretdatabase
+  458  sudo vi dbsecret.yml
+  459  sudo vi secret.yml
+  460  kubectl delete secretdatabase
+  461  subectl apply -f dbsecret.yml
+  462  kubectl apply -f dbsecret.yml
+  463  kubectl delete pod secretdatabase
+  464  kubectl apply -f dbsecret.yml
+  465  kubectl get pod
+  466  kubectl describe pod secretdatabase
+  467  sudo vi secret.yml
+  468  sudo vi dbsecret.yml
+  469  kubectl delete pod secretdatabase
+  470  kubectl apply -f dbsecret.yml
+  471  kubectl get po
+  472  sudo vi dbsecret.yml
+  473  kubectl delete pod secretdatabase
+  474  kubectl apply -f dbsecret.yml
+  475  kubectl get po
+  476  kubectl describe pod secretdatabase
+  477  sudo vi dbsecret.yml
+  478  sudo vi secret.yml
+  479  kubectl delete pod secretdatabase
+  480  kubectl apply -f dbsecret.yml
+  481  sudo vi dbsecret.yml
+  482  kubectl apply -f dbsecret.yml
+  483  kubectl get po
+  484  kubectl describe pod secretdatabase
+  485  kubectl apply -f dbsecret.yml -n default
+  486  kubectl apply -f secret.yml
+  487  kubectl get secret
+  488  kubectl delete pod secretdatabase
+  489  kubectl apply -f dbsecret.yml
+  490  kubectl get pod
+  491  kubectl describe pod secretdatabase
+  492  kubectl get pod -w
+  493  sudo vi dbsecret.yml
+  494  kubectl delete pod secretdatabase
+  495  kubectl delete secrete sec1
+  496  kubectl get secret
+  497  kubectl delete secret sec1
+  498  kubectl delete secret secrete1
+  499  kubectl apply -f secret.yml
+  500  kubec
+  501  kubectl get po
+  502  kubectl describe pod secretdatabase
+  503  kubectl delete pod secretdatabase
+  504  kubectl delete secrete sec1
+  505  kubectl get secrete
+  506  kubectl get secret
+  507  kubectl apply
+  508  kubectl apply -f secret.yml -n default
+  509  kubectl apply -f dbsecret.yml -n default
+  510  kubectl get pod -n default
+  511  kubectl get quota -n default
+  512  sudo -i
+  513  sudo vi secret.yml
+  514  kubectl get quota -n default
+  515  kubectl get pod -n default
+  516  kubectl delete pod secretdatabase
+  517  kubectl delete pod database
+  518  sudo vi secret.yml
+  519  kubectl apply -f secret.yml -n default
+  520  kubectl apply -f dbsecret.yml -n default
+  521  kubectl get pod -n default
+  522  sudo vi secret.yml
+  523  sudo vi dbsecret.yml
+  524  kubectl delete pod secretdatabase
+  525  kubectl delete secret  sec1
+  526  kubectl apply -f secret.yml -n default
+  527  sudo vi secret.yml
+  528  sudo vi dbsecret.yml
+  529  kubectl apply -f dbsecret.yml -n default
+  530  kubectl get po
+  531  kubectl describe pod mysql-pod
+  532  kubectl apply -f secret.yml -n default
+  533  sudo vi secret.yml
+  534  sudo vi dbsecret.yml
+  535  sudo vi secret.yml
+  536  sudo vi dbsecret.yml
+  537  kubectl apply -f secret.yml -n default
+  538  sudo vi dbsecret.yml
+  539  kubectl apply -f secret.yml -n default
+  540  sudo vi dbsecret.yml
+  541  cd legions-kubernetes-2023/
+  542  ls
+  543  cd ~
+  544  history > history2.txt
+

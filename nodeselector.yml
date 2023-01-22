@@ -3,8 +3,10 @@ kind: Pod
 metadata:
   name: web2
   labels: 
-  name: xyz
+    name: label2  
 spec:
   containers:
   - name: web2
     image: nginx
+  nodeSelector:
+          disktype: ssd

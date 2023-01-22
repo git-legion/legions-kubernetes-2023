@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: myclusteripservice
+  name: myclusteripservice
+spec:
+  ports:
+  - name: "clusteripservice"
+    port: 8080			# port of cluster service
+    protocol: TCP
+    targetPort: 80		# port of application/pod (for ssl layer use port 443 here)
+  selector:
+    name: xyz		# here provide label of deployment.app
+  type: ClusterIP

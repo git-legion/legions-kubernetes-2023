@@ -1,0 +1,33 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+
+  name: nginx
+
+  labels:
+
+    env: test
+
+spec:
+
+  containers:
+
+  - name: nginx
+
+    image: nginx
+
+    imagePullPolicy: IfNotPresent
+
+  tolerations:            # taint node using follwing command - kubectl taint node node_name my-key=value1:NoSchedule
+
+  - key: "my-key"
+
+    operator: "Equal"
+    
+    value: "value1"
+
+    effect: "NoSchedule"
+    
+

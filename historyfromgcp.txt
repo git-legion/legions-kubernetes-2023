@@ -638,4 +638,360 @@
   838  ls
   839  ls legions-kubernetes-2023/
   840  history 
+  833  cd legions-kubernetes-2023/
+  834  ls
+  835  ls -l
+  836  cd ~
+  837  ls
+  838  ls legions-kubernetes-2023/
+  839  history
+  840  cd legions-kubernetes-2023/
+  841  sudo mousepad
+  842  sudo Mousepad
+  843  sudo vim historyfromgcp.txt
+  844  sudo git add *
+  845  sudo git commit -m "commited on 22/01/2023"
+  846  sudo git push
+  847  sudo git push main
+  848  sudo git push -m origin main
+  849  sudo git status
+  850  sudo git push
+  851  sudo git log
+  852  git config --global --edit
+  853  git commit --amend --reset-author
+  854  sudo git commit --amend --reset-author
+  855  git commit -m "commited on 22/01/2023"
+  856  sudo git commit -m "commited on 22/01/2023"
+  857  sudo git push
+  858  git pull
+  859  sudo git pull
+  860  sudo git push
+  861  exit
+  862  ls
+  863  kubectl get node work
+  864  kubectl describe node work
+  865  kubectl describe node work-2
+  866  cd mykubetest/
+  867  cat pod-with-toleration.yml
+  868  sudo vi pod-with-toleration.yml
+  869  kubectl tainet node work-2 example-key=value1:NoSchedule
+  870  kubectl taint node work-2 example-key=value1:NoSchedule
+  871  kubectl create pod -f pod-with-toleration.yml
+  872  kubectl create pod-with-toleration.yml
+  873  kubectl create -f pod-with-toleration.yml
+  874  kubectl get pod -o wide
+  875  cat pod-with-toleration.yml
+  876  kubectl get pod -o wide
+  877  kubectl taint node work example-key=value1:NoSchedule
+  878  kubectl create -f pod-with-toleration.yml
+  879  cd mykubetest/
+  880  kubectl delete pod nginx
+  881  kubectl create -f pod-with-toleration.yml
+  882  kubectl get pod -o wide
+  883  kubectl run --image=nginx ng
+  884  kubectl get pod -o wide
+  885  cat pod-with-toleration.yml
+  886  cd mykubetest/
+  887  ls
+  888  sudo vi pod-with-toleration.yml
+  889  kubectl get pod
+  890  kubectl delete pod ng
+  891  kubectl delete pod nginx
+  892  kubectl taint node work example-key=key1:NoSchedule
+  893  kubectl taint node work example-key=key1:NoSchedule-
+  894  kubectl taint node work-2 example-key=key1:NoSchedule-
+  895  kubectl get pods
+  896  kubectl get pod
+  897  ubectl get olume
+  898  kubectl get volume
+  899  cd mykubetest/
+  900  ls
+  901  cd ..
+  902  ls
+  903  cd legions-kubernetes-2023/
+  904  ls
+  905  cp pod.yml pod_vol.yml
+  906  vi pod_vol.yml
+  907  kubectl apply -f pod_vol.yml
+  908  vi pod_vol.yml
+  909  kubectl create -f pod_vol.yml
+  910  vi pod_vol.yml
+  911  kubectl create -f pod_vol.yml
+  912  vi pod_vol.yml
+  913  kubectl create -f pod_vol.yml
+  914  vi pod_vol.yml
+  915  kubectl create -f pod_vol.yml
+  916  vi pod_vol.yml
+  917  kubectl create -f pod_vol.yml
+  918  vi pod_vol.yml
+  919  kubectl get po
+  920  vi pod_vol.yml
+  921  kubectl create -f pod_vol.yml
+  922  kubectl get po
+  923  kubectl describe pod volume
+  924  cp pod_vol.yml pod_hostvol.yml
+  925  vim pod_vol.yml
+  926  vim pod_hostvol.yml
+  927  mkdir ~/sample
+  928  vim pod_hostvol.yml
+  929  pwd
+  930  vim pod_hostvol.yml
+  931  kubectl apply -f pod_hostvol.yml
+  932  vim pod_hostvol.yml
+  933  kubectl apply -f pod_hostvol.yml
+  934  kubectl get po
+  935  kubectl logs pods/volume
+  936  kubectl logs pods/volume1
+  937  kubectl get po
+  938  vim pod_hostvol.yml
+  939  kubectl delete pod volume1
+  940  kubectl get po
+  941  kubectl delete  -f pod volume1
+  942  kubectl delete  pod volume1 -h
+  943  kubectl get po
+  944  kubectl create -f pod_hostvol.yml
+  945  kubectl get po
+  946  kubectl get po -o
+  947  kubectl get po -o wide
+  948  ls
+  949  cd legions-kubernetes-2023/
+  950  ls
+  951  cd mykubetest
+  952  cd mykubectes
+  953  cd mykubetest
+  954  cd ~
+  955  cd mykubetest
+  956  ls
+  957  cat my-app.yml
+  958  cat loadbalancer-service.yml
+  959  kubestl get svc
+  960  kubectl get svc
+  961  kubectl delete nginx-service
+  962  kubectl delete svc nginx-service
+  963  kubectl get po
+  964  kubectl get deployment
+  965  ls
+  966  kubectl create -f my-app.yml
+  967  kubectl create -f loadbalancer-service.yml
+  968  sudo vi loadbalancer-service.yml
+  969  kubectl create -f loadbalancer-service.yml
+  970  kubectl get svc
+  971  kubectl delete svc nginx-service
+  972  kubectl delete svc my-service
+  973  kubectl create -f loadbalancer-service.yml
+  974  kubectl get svc
+  975  kubectl delete svc my-service
+  976  sudo vi loadbalancer-service.yml
+  977  sudo vi deployment-for-load-balancer.yml
+  978  kubectl create -f loadbalancer-service.yml
+  979  ls
+  980  kubectl delete svc my-service
+  981  kubectl get po
+  982  kubectl get svc
+  983  kubectl create -f deployment-for-load-balancer.yml
+  984  sudo vi deployment-for-load-balancer.yml
+  985  kubectl create -f deployment-for-load-balancer.yml
+  986  sudo vi deployment-for-load-balancer.yml
+  987  rm deployment-for-load-balancer.yml
+  988  ;s
+  989  ls
+  990  sudo rm deployment-for-load-balancer.yml
+  991  ls
+  992  kubectl get svc
+  993  ls
+  994  cat my-app.yml
+  995  sudo vi my-app.yml
+  996  cat nginx-service.yml
+  997  cat my-app.yml
+  998  cat loadbalancer-service.yml
+  999  sudo vi my-app.yml
+ 1000  sudo rm my-app.yml
+ 1001  cd ..
+ 1002  cd legions-kubernetes-2023/
+ 1003  ;s
+ 1004  ls
+ 1005  cp deployment.yml ../mykubetest/
+ 1006  cd ../mykubetest/
+ 1007  ls
+ 1008  mv deployment.yml load-balancer-deploy.yml
+ 1009  cat load-balancer-deploy.yml
+ 1010  sudo vi loadbalancer-service.yml
+ 1011  sudo vi load-balancer-deploy.yml
+ 1012  sudo vi loadbalancer-service.yml
+ 1013  sudo vi load-balancer-deploy.yml
+ 1014  kubectl create -f load-balancer-deploy.yml
+ 1015  kubectl create -f loadbalancer-service.yml
+ 1016  kubect get svc
+ 1017  kubectl get svc
+ 1018  curl 10.109.249.33
+ 1019  curl 10.109.249.33:8080
+ 1020  kubectl get svc
+ 1021  cat load-balancer-deploy.yml
+ 1022  kubectl get po
+ 1023  cat loadbalancer-service.yml
+ 1024  kubectl get svc
+ 1025  cat load-balancer-deploy.yml
+ 1026  cat loadbalancer-service.yml
+ 1027  kubectl get svc
+ 1028  sudo vi loadbalancer-service.yml
+ 1029  kubectl get svc
+ 1030  kubectl delete svc my-service
+ 1031  sudo vi loadbalancer-service.yml
+ 1032  kubectl create -f loadbalancer-service.yml
+ 1033  kubectl get svc
+ 1034  curl 192.168.0.10
+ 1035  curl 192.168.0.10:8080
+ 1036  curl 192.168.0.10:30472
+ 1037  kubectl get po -o wide
+ 1038  curl 192.168.80.56
+ 1039  kubectl get svc
+ 1040  kubectl delete svc loadbalancer-service
+ 1041  kubectl delete deployments.apps lb-deployment
+ 1042  kubectl create -f load-balancer-deploy.yml
+ 1043  kubectl create -f loadbalancer-service.yml
+ 1044  kubectl get svc
+ 1045  curl 10.107.213.90
+ 1046  curl 10.107.213.90:8080
+ 1047  curl 10.107.213.90:30561
+ 1048  192.168.0.10:
+ 1049  curl 192.168.0.10
+ 1050  curl 192.168.0.10:8080
+ 1051  curl 192.168.0.10:30561
+ 1052  curl locahost
+ 1053  curl locahost:80
+ 1054  curl localhost:80
+ 1055  curl localhost
+ 1056  kubectl delete svc
+ 1057  kubectl delete svc loadbalancer-service
+ 1058  kubectl getsvc -o wide
+ 1059  kubectl get svc -o wide
+ 1060  10.105.243.37
+ 1061  curl 10.105.243.37
+ 1062  curl 10.105.243.37:30887
+ 1063  kubectl get deployments.apps
+ 1064  kubectl delete deployments.apps testing-cluster-ip
+ 1065  kubectl delete deployments lb-deployment
+ 1066  ls
+ 1067  kubectl get svc
+ 1068  kubectl delete svc my-nodeport-service
+ 1069  sudo vi lb
+ 1070  sudi vi loadbalancer-service.yml
+ 1071  sudo vi loadbalancer-service.yml
+ 1072  sudi create -f loadbalancer-service.yml
+ 1073  kubectl  create -f loadbalancer-service.yml
+ 1074  kubectl get svc
+ 1075  curl 192.168.0.10
+ 1076  curl 192.168.0.10:31064
+ 1077  kubectl delete svc loadbalancer-service
+ 1078  kubectl create -f load-balancer-deploy.yml
+ 1079  kubectl  create -f loadbalancer-service.yml
+ 1080  kubectl get svc
+ 1081  10.96.109.174
+ 1082  curl 10.96.109.174
+ 1083  192.168.0.10
+ 1084  curl 192.168.0.10
+ 1085  curl 192.168.0.10:31931
+ 1086  sudo vi load-balancer-deploy.yml
+ 1087  sudo vi loab
+ 1088  sudo vi loadbalancer-service.yml
+ 1089  kubectl get svc
+ 1090  kubectl delete svc loadbalancer-service
+ 1091  kubectl get po
+ 1092  kubectl create -f load-balancer-deploy.yml
+ 1093  kubectl get po
+ 1094  kubectl create -f loadbalancer-service.yml
+ 1095  kubectl get svc
+ 1096  10.106.250.184
+ 1097  curl 10.106.250.184
+ 1098  curl 10.106.250.184:31766
+ 1099  kubectl get svc
+ 1100  sudo vi loadbalancer-service.yml
+ 1101  kubectl delete svc loadbalancer-service
+ 1102  kubectl delete svc my-nginx-load-balancer
+ 1103  kubectl create -f loadbalancer-service.yml
+ 1104  kubectl get svc
+ 1105  sudo vi loadbalancer-service.yml
+ 1106  kubectl get svc
+ 1107  curl 10.104.34.58
+ 1108  sudo vi loadbalancer-service.yml
+ 1109  curl 10.104.34.58
+ 1110  kubectl delete svc my-nginx-load-balancer
+ 1111  kubectl create -f loadbalancer-service.yml
+ 1112  kubectl get svc
+ 1113  curl 35.188.11.2
+ 1114  35.188.11.2:30859
+ 1115  curl35.188.11.2:30859
+ 1116  curl 35.188.11.2:30859
+ 1117  curl 35.188.11.2
+ 1118  curl 10.108.187.124
+ 1119  curl 10.108.187.124:30859
+ 1120  cat load-balancer-deploy.yml
+ 1121  sudo mv load-balancer-deploy.yml load-balancer-nginx-app.yml
+ 1122  ls
+ 1123  "kubectl get deploymets"
+ 1124  kubectl get deploymets
+ 1125  kubectl get deploymet
+ 1126  kubectl get deployments.apps
+ 1127  cat loadbalancer-service.yml
+ 1128  sudo vi loadbalancer-service.yml
+ 1129  kubectl create -f loadbalancer-service.yml
+ 1130  kubectl get svc
+ 1131  cat load-balancer-nginx-app.yml
+ 1132  curl 10.108.187.124
+ 1133  curl 10.108.187.124:80
+ 1134  curl 35.188.11.2
+ 1135  curl 35.188.11.2:30859
+ 1136  sudo cp loadbalancer-service.yml load-balancer-nginx-app.yml pod-with-toleration.yml ../legions-kubernetes-2023/
+ 1137  cd ../legions-kubernetes-2023/
+ 1138  ls
+ 1139  sudo cp pod.yml volume-pod.yml
+ 1140  ls
+ 1141  sudo vi volume-pod.yml
+ 1142  kubectl create -f volume-pod.yml
+ 1143  sudo vi volume-pod.yml
+ 1144  kubectl create -f volume-pod.yml
+ 1145  kubectl get po
+ 1146  kubectl describe pod volume-attached-pod
+ 1147  cat volume-pod.yml
+ 1148  sudo cp volume-pod.yml  host-volume-pod.yml
+ 1149  ls
+ 1150  sudo vi host-volume-pod.yml
+ 1151  kubectl apply -f host-volume-pod.yml
+ 1152  kubectl get pod
+ 1153  kubectl delete pod volume-attached-pod
+ 1154  kubectl apply -f host-volume-pod.yml
+ 1155  kubectl get pod
+ 1156  sudo vi host-volume-pod.yml
+ 1157  kubectl delete pod volume-attached-pod
+ 1158  kubectl apply -f host-volume-pod.yml
+ 1159  ls ~
+ 1160  mkdir my-backup
+ 1161  ls
+ 1162  rmdir my-backup/
+ 1163  mkdir ../my-backup
+ 1164  ls ../
+ 1165  cat host-volume-pod.yml
+ 1166  kubectl delete pod host host-volume-attached-pod
+ 1167  kubectl get pod
+ 1168  kubectl apply -f host-volume-pod.yml
+ 1169  kubectl get pod
+ 1170  kubectl describe pod host-volume-attached-pod
+ 1171  cat host-volume-pod.yml
+ 1172  kubectl get pod
+ 1173  kubectl get pod -o wide
+ 1174  ssh
+ 1175  cd ../my-backup/
+ 1176  ls
+ 1177  curl 192.168.80.6
+ 1178  cd ../
+ 1179  ls
+ 1180  cd legions-kubernetes-2023/
+ 1181  ls
+ 1182  sudo git add *
+ 1183  sudo git status
+ 1184  sudo git commit -m "commited on 25/01/2023"
+ 1185  git push
+ 1186  sudo git commit -m "commited on 25/01/2023"
+ 1187  git push
+ 1188  history
 
